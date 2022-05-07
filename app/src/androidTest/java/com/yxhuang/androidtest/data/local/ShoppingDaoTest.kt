@@ -1,9 +1,12 @@
 package com.yxhuang.androidtest.data.local
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.filters.SmallTest
 import com.google.common.truth.Truth.assertThat
 import com.yxhuang.androidtest.getOrAwaitValue
+import com.yxhuang.androidtest.launchFragmentInHiltContainer
+import com.yxhuang.androidtest.ui.ShoppingFragment
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -78,6 +81,12 @@ class ShoppingDaoTest {
         val totalPriceSum = dao.observeTotalPrice().getOrAwaitValue()
 
         assertThat(totalPriceSum).isEqualTo(2 * 10f + 4 * 5.5f)
+    }
+
+    @Test
+    fun testLaunchFragmentInHiltContainer(){
+        launchFragmentInHiltContainer<ShoppingFragment> {  }
+
     }
 }
 
