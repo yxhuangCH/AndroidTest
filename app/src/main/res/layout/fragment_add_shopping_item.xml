@@ -10,7 +10,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_image"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -72,15 +71,15 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnAddShoppingItem"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnAddShoppingItem"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:text="Add"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
