@@ -2,6 +2,9 @@ package com.yxhuang.androidtest.di
 
 import android.content.Context
 import androidx.room.Room
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
+import com.yxhuang.androidtest.R
 import com.yxhuang.androidtest.data.local.ShoppingDao
 import com.yxhuang.androidtest.data.local.ShoppingItemDatabase
 import com.yxhuang.androidtest.data.remote.PixabayAPI
@@ -58,5 +61,15 @@ object AppModule {
             .build()
             .create(PixabayAPI::class.java)
     }
+
+    @Singleton
+    @Provides
+    fun provideGlideInstance(
+        @ApplicationContext context: Context
+    ) = Glide.with(context).setDefaultRequestOptions(
+        RequestOptions()
+            .placeholder(R.drawable.ic_launcher)
+            .error(R.drawable.ic_launcher)
+    )
 
 }
