@@ -1,5 +1,9 @@
-出现问题
+# 说明
+Demo 代码的主要来源是
+https://www.youtube.com/watch?v=rew86GST0g0
 
+# 出现问题
+问题
 ```text
 ktlin.UninitializedPropertyAccessException: lateinit property database has not been initialized
 at com.yxhuang.androidtest.data.local.ShoppingDaoTest.teardown(ShoppingDaoTest.kt:45)
@@ -38,5 +42,7 @@ at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:392)
 at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2219)
 
 ```
+解决：
+是注入的对象没有提高
 
 # AndroidTest
