@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AndroidTest</string>
+    <string name="contacts_activity_placeholder">PlaceHolder</string>
+
+    <string name="type_a_phone_number">Please enter a number…</string>
+    <string name="button_dial_number">Call Number</string>
+    <string name="button_pick_contact">Pick Number</string>
+
+    <string name="warning_call_phone_permission">This app requires \'call phone\' permission to run</string>
 </resources>

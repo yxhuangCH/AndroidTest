@@ -2,11 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yxhuang.androidtest">
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
     <application>
         <activity
             android:name=".HiltTestActivity"
             android:exported="false">
         </activity>
+
+        <activity android:name=".ui.MainTwoActivity"/>
+        <activity android:name=".ui.SecondActivity"/>
+        <activity android:name=".ui.intent.ContactsActivity"/>
     </application>
 
 </manifest>
